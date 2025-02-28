@@ -14,20 +14,20 @@
   "labels": [
     "dependencies"
   ],
-  "automerge": true,
-  "automergeType": "pr",
   "prConcurrentLimit": 5,
-  "platformAutomerge": true,
   "packageRules": [
     {
       "matchManagers": [
         "composer"
       ],
+      "matchUpdateTypes": [
+        "minor",
+         "patch"
+        ],
       "schedule": [
         "every weekend"
       ],
       "enabled": true,
-      "automerge": false,
       "groupName": "All Composer Updates",
       "matchPackageNames": [
         "*"
@@ -37,11 +37,14 @@
       "matchManagers": [
         "npm"
       ],
+      "matchUpdateTypes": [
+        "minor",
+         "patch"
+        ],
       "schedule": [
         "every weekend"
       ],
       "enabled": true,
-      "automerge": false,
       "groupName": "All NPM Updates",
       "matchPackageNames": [
         "*"
