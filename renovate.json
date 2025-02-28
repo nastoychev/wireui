@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "platform": "github",
+  "repositories": ["nastoychev/wireui"],
+  "dependencyDashboard": true,
+  "assignees": ["nastoychev"],
+  "labels": ["dependencies"],
+  "automerge": true,
+  "automergeType": "pr",
+  "prConcurrentLimit": 5,
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "managers": ["composer"],
+      "packagePatterns": ["*"],
+      "schedule": ["every weekend"],
+      "enabled": true,
+      "automerge": false,
+      "groupName": "All Composer Updates"
+    },
+    {
+      "managers": ["npm"],
+      "packagePatterns": ["*"],
+      "schedule": ["every weekend"],
+      "enabled": true,
+      "automerge": false,
+      "groupName": "All NPM Updates"
+    }
+  ]
+}
