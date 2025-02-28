@@ -24,7 +24,7 @@
     "require-dev": {
         "mockery/mockery": "^1.6",
         "phpunit/phpunit": "^10.5",
-        "orchestra/testbench": "^8.14 || ^9.0",
+        "orchestra/testbench": "^8.14 || ^9.0 || ^10.0",
         "orchestra/testbench-dusk": "^8.14 || ^9.0",
         "psy/psysh": "^0.12.3",
         "pestphp/pest": "^2.34",
